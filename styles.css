@@ -360,52 +360,6 @@ footer {
     }
 }
 
-.dance-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    text-align: center;
-    table-layout: fixed; /* Ensures cells don't overflow */
-}
-
-.dance-table td {
-    padding: 15px;
-    border: 1px solid #ddd;
-    font-size: 1.1rem;
-    word-wrap: break-word; /* Ensures long words wrap properly */
-    box-sizing: border-box; /* Prevents overflow of padding */
-}
-
-.dance-table td {
-    background-color: #f9f9f9;
-}
-
-.dance-table tr:nth-child(even) td {
-    background-color: #eaeaea;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .dance-table, .dance-table tbody, .dance-table tr, .dance-table td {
-        display: block;
-        width: 100%;
-    }
-
-    .dance-table tr {
-        margin-bottom: 10px; /* Space between rows */
-    }
-
-    .dance-table td {
-        text-align: left;
-        padding-left: 20px;
-        position: relative;
-        border: none;
-        border-bottom: 1px solid #ddd;
-        display: inline-block;
-        width: 33%; /* Ensure three columns per row in mobile */
-        box-sizing: border-box;
-    }
-}
 
 .custom-h2 {
     margin: 0.5rem 0; /* Reduced margin for less spacing */
@@ -449,4 +403,31 @@ footer {
 
 #me-about{
     padding-left:1rem;
+}
+
+/* Dance Grid Styling */
+.dance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive layout */
+    gap: 1rem; /* Space between items */
+    margin-top: 1.5rem;
+}
+
+.dance-grid div {
+    padding: 1rem;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    color: #4b0082; /* Dark purple text for visibility */
+    text-align: center; /* Center align text */
+    border: 1px solid #ddd; /* Light border for visual separation */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 1rem; /* Adjust font size */
+    cursor: default; /* Indicate non-interactive elements */
+}
+
+/* Add focus and hover styles for accessibility */
+.dance-grid div:focus,
+.dance-grid div:hover {
+    outline: 3px solid #360063; /* Visible outline on focus/hover */
+    background-color: #eaeaea; /* Slightly darker background */
 }
