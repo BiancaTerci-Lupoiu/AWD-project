@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An accessible and adaptive webpage example">
+    <title>Accessible and Adaptive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>DANCE</h1>
+    </header>
+    <nav>
+        <a href="index.html" accesskey="b">Main</a>
+        <a href="people.html" accesskey="s">People findings</a>
+        <a href="me.html" accesskey="c">Dance - to me</a>
+        <a href="research.html" accesskey="a">Research</a>
+    </nav>
+    <main>
+        <h1>What does dance mean to others?</h1>
+        <h2>ChatGPT</h2>
+        <ul>
+            <li>
+                <b>Q1: How would you describe dance/dancing? What does it mean to you? Explain in one phrase.</b> <br />
+                &emsp;&emsp;<b>Ans:</b> Dance is the expression of emotion, energy, and story through the movement of
+                the body
+                in rhythm with life.
+            </li>
+            <br />
+            <li>
+                <b>Q2: Use 3 words to describe dance/dancing:</b> <br />
+                &emsp;&emsp;<b>Ans:</b> Expression, connection, rhythm
+            </li>
+            <br />
+            <li>
+                <div id="chatGptDancePicContainer">
+                    <p><b>Q3: Generate a picture that comes into your mind when you think about dance/dancing:</b>
+                        <br />
+                        &emsp;&emsp;<b>Ans:</b> <br />
+                    </p>
+                    <img id="chatDancePic" src="/images/ChatGPTDance.png" alt="chatGptDance" />
+                </div>
+            </li>
+        </ul>
+        <br />
+        <hr class="dot-line" />
+        <br />
+        <h2>Real People</h2>
+        <div class="people-words">
+            <p>When asking people to describe what dance/dancing means to them using one word, I got the following
+                answers:
+            </p>
+            <img id="people-img" src="/images/WordCloud.png" alt="wordsDance" />
+        </div>
+        <br /><br />
+
+        And because <b><i>"A picture is worth a thousand words"</i></b> people used these pictures to illustrate what
+        dance means to them:
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="/images/dance1.jpg" alt="dance1">
+                <img src="/images/dance2.jpg" alt="dance2">
+                <img src="/images/dance3.jpg" alt="dance3">
+                <img src="/images/dance4.jpg" alt="dance4">
+                <img src="/images/dance5.jpg" alt="dance5">
+                <img src="/images/dance6.jpg" alt="dance6">
+                <img src="/images/dance7.jpg" alt="dance7">
+            </div>
+            <button class="carousel-arrow left-arrow" aria-label="Previous">❮</button>
+            <button class="carousel-arrow right-arrow" aria-label="Next">❯</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dance.</p>
+    </footer>
+</body>
+
+</html>
